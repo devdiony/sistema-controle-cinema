@@ -33,6 +33,8 @@ services:
       - ./frontend:/usr/src/app
       # Este volume anônimo evita que o node_modules do host sobrescreva o do contêiner.
       - /app/node_modules
+    environment:
+      - VITE_WATCHER_USE_POLLING=true
     networks:
       - my_network
 

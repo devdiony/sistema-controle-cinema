@@ -1,28 +1,30 @@
-Sistema de Gestão de Funcionários com Docker 🐳
+Sistema de Controle de Cinema com Docker 🎬
 
-Este repositório contém a implementação de um sistema web para o gerenciamento de funcionários, desenvolvido em um ambiente de desenvolvimento completo e containerizado com Docker Compose.
+Este repositório contém um sistema web para o gerenciamento de um cinema, desenvolvido com HTML, CSS e JavaScript puro. O ambiente de desenvolvimento é totalmente containerizado com Docker.
 
 🚀 Sobre o Projeto
 
-Este projeto é um sistema CRUD (Criar, Ler, Atualizar, Deletar) para o gerenciamento de funcionários de uma startup de tecnologia. A aplicação permite:
+Este projeto simula um sistema de controle para o "CineDev". A aplicação permite o gerenciamento completo das operações do cinema, com as seguintes funcionalidades:
 
-Cadastrar novos funcionários através de um formulário.
+Cadastro de Filmes: Adicionar novos filmes ao catálogo.
 
-Listar todos os funcionários cadastrados em uma tabela.
+Cadastro de Salas: Registrar as salas de exibição.
 
-Editar as informações de um funcionário existente.
+Cadastro de Sessões: Agendar sessões, vinculando filmes e salas.
 
-Excluir um funcionário da lista.
+Venda de Ingressos: Registrar a venda de ingressos para sessões específicas.
 
-Gerar relatórios dinâmicos, como a lista de funcionários com salários altos, média salarial, e mais.
+Listagem de Sessões: Visualizar todas as sessões disponíveis em um layout de cards.
 
-O sistema foi construído aplicando conceitos de manipulação de DOM com JavaScript puro, orientação a objetos (Classes), tratamento de eventos e programação funcional com métodos de array (map, filter, reduce).
+Toda a persistência de dados é feita localmente no navegador, utilizando localStorage.
 
 🛠️ Tecnologias Utilizadas
 
 Linguagens: HTML5, CSS3, JavaScript (ES6+)
 
 Framework CSS: Bootstrap 5
+
+Armazenamento: localStorage
 
 Containerização: Docker e Docker Compose
 
@@ -42,22 +44,11 @@ Siga os passos abaixo para levantar todo o ambiente na sua máquina local.
 
 1. Clone o repositório
 
-git clone [https://github.com/devdiony/sistema-gestao-funcionarios.git]([(https://github.com/devdiony/sistema-gestao-funcionarios.git)])
-cd sistema-gestao-funcionarios
+git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
+cd SEU-REPOSITORIO
 
 
-(Substitua pela URL do seu novo repositório após criá-lo)
-
-2. Configure as variáveis de ambiente
-
-Copie o arquivo de exemplo .env.example para um novo arquivo chamado .env.
-
-cp .env.example .env
-
-
-(As variáveis de ambiente neste projeto são para os serviços de banco de dados e pgAdmin, que fazem parte do boilerplate base).
-
-3. Suba os contêineres
+2. Suba os contêineres
 
 Este comando irá construir as imagens (na primeira vez) e iniciar todos os serviços em segundo plano.
 
@@ -68,19 +59,35 @@ docker-compose up --build -d
 
 🌐 Acessando a Aplicação
 
-Após a execução, o sistema de gerenciamento de funcionários estará disponível no seguinte endereço:
+Após a execução, o sistema de cinema estará disponível no seguinte endereço. A navegação entre as diferentes seções é feita pelo menu no topo da página.
 
 Serviço
 
 URL de Acesso
 
-Propósito
-
-Sistema de Funcionários
+Página Inicial
 
 http://localhost:5173
 
-Acesso direto à aplicação de gerenciamento de funcionários.
+📂 Estrutura do Projeto
+
+O frontend é composto por várias páginas HTML interligadas:
+
+index.html: A página de boas-vindas.
+
+cadastro-filmes.html: Formulário para adicionar filmes.
+
+cadastro-salas.html: Formulário para adicionar salas.
+
+cadastro-sessoes.html: Formulário para criar sessões, carregando dados de filmes e salas.
+
+venda-ingressos.html: Formulário para vender ingressos, carregando dados de sessões.
+
+sessoes.html: Exibe todas as sessões disponíveis.
+
+css/style.css: Estilos personalizados.
+
+js/app.js: Contém toda a lógica JavaScript da aplicação.
 
 comandos Úteis do Docker Compose
 

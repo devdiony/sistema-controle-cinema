@@ -1,0 +1,9 @@
+/* Adiciona um espaçamento no topo do corpo da página para compensar o menu fixo */
+body {
+    padding-top: 80px;
+}
+
+/* Garante que o container principal tenha um espaçamento inferior */
+main.container {
+    padding-bottom: 2rem;
+}
