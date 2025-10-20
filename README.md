@@ -42,8 +42,8 @@ Siga os passos abaixo para levantar todo o ambiente na sua máquina local.
 
 1. Clone o repositório
 
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
-cd SEU-REPOSITORIO
+git clone [https://github.com/devdiony/sistema-gestao-funcionarios.git]([(https://github.com/devdiony/sistema-gestao-funcionarios.git)])
+cd sistema-gestao-funcionarios
 
 
 (Substitua pela URL do seu novo repositório após criá-lo)
