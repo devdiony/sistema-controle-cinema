@@ -44,8 +44,8 @@ Siga os passos abaixo para levantar todo o ambiente na sua máquina local.
 
 1. Clone o repositório
 
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
-cd SEU-REPOSITORIO
+git clone [(https://github.com/devdiony/sistema-controle-cinema.git)](https://github.com/devdiony/sistema-controle-cinema.git)]
+cd sistema-controle-cinema
 
 
 2. Suba os contêineres
